@@ -1,6 +1,13 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+/*
+ * Created on Fri Mar 03 2023
+ * Created by JS00001
+ *
+ * Copyright (c) 2023 Trackwyse
+ */
 
-export default function Document() {
+import { Html, Head, Main, NextScript } from "next/document";
+
+const Document = () => {
   return (
     <Html lang="en">
       <Head />
@@ -9,5 +16,7 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
-}
+  );
+};
+
+export default Document;
