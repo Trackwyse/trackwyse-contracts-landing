@@ -5,6 +5,7 @@
  * Copyright (c) 2023 Trackwyse
  */
 
+import Button from "@/components/Button";
 import Head from "next/head";
 
 const Home = () => {
@@ -16,7 +17,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main className="p-5">
+        <Button>Start now</Button>
+      </main>
     </>
   );
 };

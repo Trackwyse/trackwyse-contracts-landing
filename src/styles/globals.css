@@ -8,3 +8,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .dropshadow-sm {
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 1)
+  }
+
+  .dropshadow-md {
+    box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1)
+  }
+
+  .dropshadow-lg {
+    box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 1)
+  }
+
+  .dropshadow-xl {
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1)
+  }
+}
