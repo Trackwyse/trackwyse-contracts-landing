@@ -5,12 +5,29 @@
  * Copyright (c) 2023 Trackwyse
  */
 
-interface ContainerProps {
-  children: React.ReactNode;
-}
+import classNames from 'classnames';
 
-const Container: React.FC<ContainerProps> = ({ children }) => {
-  return <div className="">{children}</div>;
+interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+const Container: React.FC<ContainerProps> = ({
+	className,
+	children,
+	...props
+}) => {
+	const containerClassNames = classNames(
+		'container mx-auto px-4',
+		'sm:px-6',
+		'md:px-8',
+		'lg:px-10',
+		'xl:px-12',
+		className
+	);
+
+	return (
+		<div className={containerClassNames} {...props}>
+			{children}
+		</div>
+	);
 };
 
 export default Container;

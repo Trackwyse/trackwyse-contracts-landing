@@ -29,4 +29,8 @@
   .dropshadow-xl {
     box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1)
   }
+
+  :root {
+    @apply bg-blue-100
+  }
 }
