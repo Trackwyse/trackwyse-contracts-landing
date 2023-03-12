@@ -11,12 +11,12 @@ import * as RemixIcons from "react-icons/ri";
 const sizeClasses = {
   sm: classNames(
     "rounded-md dropshadow-md py-3 px-9 text-base font-medium",
-    "hover:dropshadow-sm hover:transition-all hover:duration-300 ",
+    "hover:dropshadow-xs hover:transition-all hover:duration-300 ",
     "disabled:opacity-50 disabled:cursor-not-allowed"
   ),
   lg: classNames(
     "rounded-lg dropshadow-lg py-4 px-14 text-lg font-medium",
-    "hover:dropshadow-md hover:transition-all hover:duration-300",
+    "hover:dropshadow-sm hover:transition-all hover:duration-300",
     "disabled:opacity-50 disabled:cursor-not-allowed"
   ),
 };

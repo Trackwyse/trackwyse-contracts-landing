@@ -5,11 +5,17 @@
  * Copyright (c) 2023 Trackwyse
  */
 
+import Meta from "@/providers/Meta";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Meta />
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 export default App;
