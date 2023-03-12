@@ -5,17 +5,20 @@
  * Copyright (c) 2023 Trackwyse
  */
 
-import Meta from "@/providers/Meta";
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import FontProvider from '@/providers/Font';
+import Meta from '@/providers/Meta';
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return (
-    <>
-      <Meta />
-      <Component {...pageProps} />
-    </>
-  );
+	return (
+		<>
+			<FontProvider>
+				<Meta />
+				<Component {...pageProps} />
+			</FontProvider>
+		</>
+	);
 };
 
 export default App;

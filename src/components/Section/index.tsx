@@ -5,29 +5,6 @@
  * Copyright (c) 2023 Trackwyse
  */
 
-import classNames from 'classnames';
-
-interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
-	showMargin?: boolean;
-}
-
-const Section: React.FC<SectionProps> = ({
-	children,
-	className,
-	showMargin,
-	...props
-}) => {
-	const sectionClassNames = classNames(
-		'w-full',
-		showMargin ? 'my-20' : 'my-0',
-		className
-	);
-
-	return (
-		<section className={sectionClassNames} {...props}>
-			{children}
-		</section>
-	);
-};
+import Section from './Section';
 
 export default Section;

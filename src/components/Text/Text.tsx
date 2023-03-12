@@ -9,12 +9,12 @@ import classNames from 'classnames';
 import React from 'react';
 
 const textSizeClasses = {
-	h1: 'text-6xl font-bold',
+	h1: 'text-6xl font-bold tracking-loose leading-tight',
 	h2: 'text-5xl font-bold',
 	h3: 'text-3xl font-bold',
 	h4: 'text-2xl font-semibold',
-	h5: 'text-xl font-medium',
-	h6: 'text-base font-medium',
+	h5: 'text-xl font-normal',
+	h6: 'text-base font-normal',
 	p: 'text-sm font-normal',
 	span: 'text-base font-normal',
 };

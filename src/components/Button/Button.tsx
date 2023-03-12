@@ -15,7 +15,7 @@ const sizeClasses = {
 		'disabled:opacity-50 disabled:cursor-not-allowed'
 	),
 	lg: classNames(
-		'rounded-lg dropshadow-lg py-4 px-14 text-lg font-medium',
+		'rounded-lg dropshadow-lg py-3 px-16 text-lg font-medium',
 		'hover:dropshadow-sm hover:transition-all hover:duration-300',
 		'disabled:opacity-50 disabled:cursor-not-allowed'
 	),
