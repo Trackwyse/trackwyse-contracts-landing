@@ -30,6 +30,18 @@
     box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1)
   }
 
+  .orange-shadow {
+    box-shadow: 6px 6px 0px 1px #FFC2A0, 6px 6px 0px 2px #000000;
+  }
+
+  .green-shadow {
+    box-shadow: 6px 6px 0px 1px #A0FFC2, 6px 6px 0px 2px #000000;
+  }
+
+  .red-shadow {
+    box-shadow: 6px 6px 0px 1px #FFA0A0, 6px 6px 0px 2px #000000;
+  }
+
   :root {
     @apply bg-blue-100
   }
