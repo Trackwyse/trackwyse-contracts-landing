@@ -13,7 +13,7 @@ import Container from '@/components/Container';
 
 const Navbar: React.FC = () => {
 	return (
-		<div className='flex items-center justify-between py-4'>
+		<Container className='flex items-center justify-between py-4'>
 			<div className='flex items-center gap-x-5'>
 				<Image
 					width={194}
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
 				</Button>
 				<Button size='sm'>Try for Free</Button>
 			</div>
-		</div>
+		</Container>
 	);
 };
 

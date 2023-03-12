@@ -15,11 +15,11 @@ const Container: React.FC<ContainerProps> = ({
 	...props
 }) => {
 	const containerClassNames = classNames(
-		'container mx-auto px-4',
-		'sm:px-6',
-		'md:px-8',
-		'lg:px-10',
-		'xl:px-12',
+		'px-4',
+		'sm:px-8',
+		'md:px-16',
+		'lg:px-32',
+		'xl:px-40',
 		className
 	);
 

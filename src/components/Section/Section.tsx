@@ -6,22 +6,33 @@
  */
 
 import classNames from 'classnames';
+import Container from '../Container';
 
 interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
-	showMargin?: boolean;
+	withMargin?: boolean;
+	withContainer?: boolean;
 }
 
 const Section: React.FC<SectionProps> = ({
 	children,
 	className,
-	showMargin,
+	withMargin = false,
+	withContainer = false,
 	...props
 }) => {
 	const sectionClassNames = classNames(
 		'w-full',
-		showMargin ? 'my-40' : 'my-0',
+		withMargin ? 'py-40' : 'py-0',
 		className
 	);
+
+	if (withContainer) {
+		return (
+			<section {...props}>
+				<Container className={sectionClassNames}>{children}</Container>
+			</section>
+		);
+	}
 
 	return (
 		<section className={sectionClassNames} {...props}>
